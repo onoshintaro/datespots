@@ -6,7 +6,8 @@
             <div class="cover-contents">
                 <h1>素敵なデートスポットと出会う場所</h1>
                 @if (!Auth::check())
-                <a href="" class="btn btn-success btn-lg">モノリストを始める</a>
+                <a href="#" class="btn btn-success btn-lg">モノリストを始める</a>
+                @endif
             </div>
         </div>
     </div>
