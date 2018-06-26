@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-left" href="/"><img src="{{ secure_asset("images/logo.png") }}" alt="Monolist"></a>
+                <a class="navbar-left" href="/"><img src="{{ secure_asset("images/datespot_favicon.png") }}" alt="Datespot"></a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -16,7 +16,7 @@
                         <li>
                             <a href="#">
                                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                アイテムを追加
+                                プレイスを追加
                               </a>
                         </li>
 
