@@ -1,24 +1,11 @@
-<!DOCTYPE HTML>
 <?php
-$json = json_decode(file_get_contents('http://webservice.recruit.co.jp/hotpepper/genre/v1/?key=7df6830b61b650df&format=json'));
+function searchPlace($keyword) {
+	$api_key = 'AIzaSyBoip3JCxXBNUO_yPVHZcAJcRmYEJGcmUk';
+	$keyword = urlencode($keyword);
+	$url = "https://maps.googleapis.com/maps/api/place/textsearch/json?key={$api_key}&query={$keyword}";
+	$json = file_get_contents($url);
+	$data = json_decode($json, true);
+	return $data;
+}
+print_r(searchPlace("クリムゾンハウス"));
 ?>
-<html>
-    <head>
-        <title>ホットペッパーAPIデモ</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>ホットペッパーAPIデモ</h1>
-            <p>飲食店のジャンル一覧を表示する。</p>
-            <p>リクエスト先URL: http://webservice.recruit.co.jp/hotpepper/genre/v1/?key=7df6830b61b650df&format=json</p>
-            <ul class="genres">
-                <?php foreach($json->results->genre as $genre): ?>
-                    <li class="genre">
-                        ジャンル名: <?php echo $genre->name ?><br/>
-                        ジャンルコード: <?php echo $genre->code ?>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-    </body>
-</html>

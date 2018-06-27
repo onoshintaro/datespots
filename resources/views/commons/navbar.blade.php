@@ -14,9 +14,9 @@
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::check())
                         <li>
-                            <a href="#">
+                            <a href="{{ route('spots.create') }}">
                                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                プレイスを追加
+                                スポットを追加
                               </a>
                         </li>
 

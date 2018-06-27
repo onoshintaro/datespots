@@ -48,3 +48,29 @@ footer {
     background-color: #ed486f;
     border-color: #ed486f;
 }
+<<<<<<< HEAD
+=======
+/* search */
+.search {
+    margin-bottom: 20px;
+}
+
+/* spot */
+.spot .panel-body {
+    height: 70px;
+}
+.spot .panel-heading {
+    height: 250px;
+}
+.spot .panel-heading img {
+    height: 100%;
+    max-width: 100%;
+}
+p.spot-title {
+    /* Keep the number of lines in a sentence on two lines, and add "..." to the end of line. */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+>>>>>>> API
